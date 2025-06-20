@@ -1,0 +1,237 @@
+/* fallback */
+@font-face {
+  font-family: 'NotoSans';
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+  src: url(assets/fonts/static/NotoSans-Bold.ttf) format('truetype');
+}
+
+:root {
+ --main-background: #04091d;
+ --main-header: #1f2535;
+ --headline-color: white;
+ --toggle-button: #2f354b;
+ --filter-active-button: #f35c55;
+ --filter-active-hover-button: #ec7771;
+ --filter-button: #2f354d;
+ --description-text: #bdbfcb;
+ --border-button: #52576b; 
+ --extension-border: var(--border-button);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "NotoSans";
+    background: var(--main-background);
+}
+
+header {
+    background: var(--main-header);
+    border-radius: 10px;
+    display: flex;
+    flex-flow:row;
+    vertical-align: middle;
+    align-items: center;
+    justify-content:space-between;
+    margin: 1rem;
+    margin-top: 2rem;
+   
+}
+h1, h2, h3 {
+    color: var(--headline-color);
+}
+h1 {
+    color: var(--headline-color);
+    background-image: url(assets/images/logo.svg);
+    background-repeat: no-repeat;
+    padding: 1rem;
+    padding-left: 63px;
+    background-position: 9px 12px;
+    font-size: 24px;
+    margin-top: 0px;
+    
+
+}
+h2 {
+    font-size: 33px;
+    margin: 28px 0 20px;
+    text-align: center;
+    display: block;
+   letter-spacing: 0px;
+}
+
+.toggle {
+        background-color: var(--toggle-button);
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    margin-right: 25px;
+    background-image: url(assets/images/icon-sun.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
+    background-size: 45%
+}
+.all {
+    background-color: var(--filter-active-button);
+    margin-left: 0px;
+}
+button {
+        background-color: var(--filter-button);
+    color: white;
+    margin-left: 9px;
+    border-radius: 40px;
+    padding: 20px;
+    padding: 10px 21px;
+}
+.description p {
+    color: var(--description-text);
+    line-height: 22px;
+    margin-top: 6px;
+}
+.filter button {
+        border: 1px solid var(--border-button);
+ 
+    font-size: 21px;
+}
+.filter {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px;
+}    
+
+.extension {
+    margin: 1rem;
+    border: 1px solid var(--extension-border);
+    background-color: var(--filter-button);
+        padding: 20px 20px;
+        border-radius: 10px;
+}
+.description,
+.controlpanel {
+    display: flex;
+    flex-direction: row;
+      justify-content:space-between;
+      align-items: center;
+
+}
+.controlpanel {
+    margin-top:18px;
+}
+.description {
+    align-items: flex-start;
+}
+.description > * + * {
+    margin-left: 18px;
+    width: 80%;
+}
+
+
+.controlpanel .buttonwrapper button {
+    padding: 12px;
+    display: block;
+    box-sizing: border-box;
+    margin-left: 0;
+    font-size: 16px;
+}
+  .checkbox-wrapper-2 .ikxBAC {
+    appearance: none;
+    background-color: #dfe1e4;
+    border-radius: 72px;
+    border-style: none;
+    flex-shrink: 0;
+        height: 26px;
+    margin: 0;
+    position: relative;
+    width: 46px;
+  }
+
+  .checkbox-wrapper-2 .ikxBAC::before {
+    bottom: -6px;
+    content: "";
+    left: -6px;
+    position: absolute;
+    right: -6px;
+    top: -6px;
+  }
+
+  .checkbox-wrapper-2 .ikxBAC,
+  .checkbox-wrapper-2 .ikxBAC::after {
+    transition: all 100ms ease-out;
+  }
+
+  .checkbox-wrapper-2 .ikxBAC::after {
+    background-color: #fff;
+    border-radius: 50%;
+    content: "";
+    height: 26px;
+    left: 3px;
+    position: absolute;
+    top: 0px;
+    width: 26px;
+  }
+
+  .checkbox-wrapper-2 input[type=checkbox] {
+    cursor: default;
+  }
+
+  .checkbox-wrapper-2 .ikxBAC:hover {
+    background-color: var(--filter-active-hover-button);;
+    transition-duration: 0s;
+  }
+
+  .checkbox-wrapper-2 .ikxBAC:checked {
+    background-color: var(--filter-active-button);
+  }
+
+  .checkbox-wrapper-2 .ikxBAC:checked::after {
+    background-color: #fff;
+    left: 23px;
+  }
+
+  .checkbox-wrapper-2 :focus:not(.focus-visible) {
+    outline: 0;
+  }
+
+  .checkbox-wrapper-2 .ikxBAC:checked:hover {
+    background-color: var(--filter-active-button);;
+  }
+  @media(min-width:600px) {
+    .extensionlist {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  @media (min-width: 600px) {
+.container {
+    max-width: 1135px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin: auto;
+}
+header {
+    margin:0;
+}
+.split {
+    display: flex;
+    flex-flow: row;
+     justify-content:space-between;
+      align-items: center;
+}  
+.filter {
+    margin: 0;
+    
+
+}
+.extension {
+        justify-items: center;
+        margin:0.5rem;
+}
+.description, .controlpanel {
+        width: 100%;
+}
+
+}
