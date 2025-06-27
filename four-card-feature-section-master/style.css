@@ -96,4 +96,8 @@ body > p {
     .card {
         max-width: 340px;
     }
+    .card.team, .card.karma {
+        margin-left: auto;
+  margin-right: auto;
+    }
 }
