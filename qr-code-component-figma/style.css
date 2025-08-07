@@ -1,0 +1,49 @@
+:root {
+    --white: 0deg, 0%, 100%;
+    --slate-900: 218deg, 44%, 22%;
+    --slate-500: 216deg, 15%, 48%;
+    --slate-300: 212deg, 45%, 89%;
+    --blue-600: 216deg 95 58;
+    --blue-500: 216deg 100 61;
+    --headline-family: "Outfit";
+    --headline-size: 22;
+    --paragraph-family: "Outfit";
+    --paragraph-size: 15;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: hsl(var(--slate-300));
+    font-size: var(--paragraph-size);
+    font-family: var(--paragraph-family);
+}
+h3 {
+    font-size: var(--headline-size);
+}
+.card {
+    width: 320px;
+    padding: 16px 16px 40px 16px;
+    background-color: hsl(var(--white));
+      margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+.qrcode {
+    background-color: hsl(var(--blue-600));
+    padding: 64px;
+    margin: 0;
+    text-align: center;
+    border-radius: 10px;
+}
+.qrcode img {
+    width: 160px;
+}
+h3 {
+    margin-top: 24px;
+    margin-bottom: 14px;
+}
